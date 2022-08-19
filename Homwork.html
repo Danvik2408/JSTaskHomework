@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // 1 В новий масив добавити імена людей в яких остання літера в імені (a);
+
+let db = [{
+                name: 'Victor',
+                code: 1601416,
+                age: 14,
+                length: 160,
+                weight: 42,
+                money: 252
+            },
+            {
+                name: 'Taras',
+                code: 1423243,
+                age: 19,
+                length: 180,
+                weight: 50,
+                money: 1000
+            },
+            {
+                name: 'Alex',
+                code: 4533333,
+                age: 10,
+                length: 110,
+                weight: 45,
+                money: 10
+            },
+            {
+                name: 'Nastya',
+                code: 89878789,
+                age: 20,
+                length: 160,
+                weight: 60,
+                money: 776
+            },
+            {
+                name: 'Oleg',
+                code: 66787998,
+                age: 30,
+                length: 180,
+                weight: 90,
+                money: 12323
+            },
+            {
+                name: 'Valera',
+                code: 76787876,
+                age: 17,
+                length: 190,
+                weight: 110,
+                money: 12
+            },
+            {
+                name: 'John',
+                code: 34343422,
+                age: 9,
+                length: 90,
+                weight: 30,
+                money: 776
+            },
+            {
+                name: 'Yura',
+                code: 7888765,
+                age: 14,
+                length: 150,
+                weight: 56,
+                money: 8998
+            },
+            {
+                name: 'Andrii',
+                code: 8898788,
+                age: 18,
+                length: 170,
+                weight: 77,
+                money: 677
+            },
+            {
+                name: 'Yulia',
+                code: 1215456,
+                age: 7,
+                length: 80,
+                weight: 34,
+                money: 0
+            }
+        ]
+
+let arr = [];
+        for(let i = 0; i<db.length; i++){
+            if(db[i].name.slice(-1)=='a'){
+                arr.push(db[i].name)
+            }
+           
+        }console.log(arr)
+
+
+        // 1 рівень
+
+        // let firstName = 'Danylo';
+        // let lastName = ' Kaftan';
+
+        // alert('Hello, '+ firstName +  lastName );
+
+         // 2 рівень
+
+        //  1
+        let firstName = prompt("Твоє ім'я?")
+        let  lasttName = prompt('Твоя фамілія?')
+
+        alert('Hello '+ firstName + lasttName) 
+        // 2
+        let uBornYear = prompt('Твій рік народження?')
+        let uYears = 2022-uBornYear;
+        
+        console.log(firstName, uYears)
+        // 3
+        uBornData = prompt('Введи дату народження!')
+        console.log(firstName, uBornData)
+        // 4
+        if(uBornYear%4==0){
+            alert(uBornYear+'- це високосний рік!')
+        }else{
+            alert(uBornYear+'-це не високосний рік!')
+        }
+
+        // 3 рівень
+
+        let number = [];
+
+        while(number.length!= 10){
+            number.push(Math.floor(Math.random()*100))
+        }
+
+        console.log(number)
+
+        if(number[0]%2==0){
+            console.log(number[0]+' -число парне!')
+        }else{
+            console.log(number[0]+' -число непарне!') 
+        }
+
+        if(number.slice(-1)%2 == 0){
+            console.log(number.slice(-1)+' -число парне!')
+        }else{
+            console.log(number.slice(-1)+' -число непарне!')
+        }
+
+        // 4 рівень
+
+        // 1
+
+        let a =parseInt(prompt('Введи число a!'))
+        let b =parseInt(prompt('Введи число b!'))
+
+        console.log(a+b)
+
+        // 2
+
+        let c =parseInt(prompt('Введи число c!'))
+        let d =parseInt(prompt('Введи число d!'))
+
+        console.log(c-d)
+
+        // 3
+
+        let e =parseInt(prompt('Введи число e!'))
+        let f =parseInt(prompt('Введи число f!'))
+
+        console.log(e/f)
+
+        // 4
+
+        let g =parseInt(prompt('Введи число g!'))
+        let h =parseInt(prompt('Введи число h!'))
+        let m =parseInt(prompt('Введи число m!'))
+        let sum1 = g*h;
+        let sum2 = sum1*m
+        
+
+        console.log(sum2)
+
+        // 5
+        let n = prompt('Введи число n')
+        let k = prompt('Введи число k')
+
+        if(n>k){
+            console.log(n)
+        }else{
+            console.log(k
+            )
+        }
+        // 6
+        let x = prompt('Введи число x')
+        let y = prompt('Введи число y')
+        let z = prompt('Введи число z')
+
+
+        if(x<y && x<z){
+            console.log(x)
+        }else if(y<x && y<z){
+            console.log(y)
+            
+        }else if(z<x && z<y){
+            console.log(z)
+        }
+
+       
+
+ 
+    </script>
+    
+</body>
+</html>

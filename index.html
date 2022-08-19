@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+            // let flip = Math.floor(Math.random()*100);
+            // if(flip<=100 && flip>50){
+            //     console.log('Решка')
+            // }else if(flip<=50 && flip>1){
+            //     console.log('Орел')
+            // }else if(flip==1){
+            //     console.log('Монета на ребрі')
+            // }
+            
+            // console.log(flip);
+
+
+
+            // let Weather {
+            //     temperature :  20;
+            //     Humidity : 40;
+            //     Tusk : 770;
+            //     WindSpeed : 5
+                
+            // }
+
+            let db = [{
+                name: 'Victor',
+                code: 1601416,
+                age: 14,
+                length: 160,
+                weight: 42,
+                money: 252
+            },
+            {
+                name: 'Taras',
+                code: 1423243,
+                age: 19,
+                length: 180,
+                weight: 50,
+                money: 1000
+            },
+            {
+                name: 'Alex',
+                code: 4533333,
+                age: 10,
+                length: 110,
+                weight: 45,
+                money: 10
+            },
+            {
+                name: 'Nastya',
+                code: 89878789,
+                age: 20,
+                length: 160,
+                weight: 60,
+                money: 776
+            },
+            {
+                name: 'Oleg',
+                code: 66787998,
+                age: 30,
+                length: 180,
+                weight: 90,
+                money: 12323
+            },
+            {
+                name: 'Valera',
+                code: 76787876,
+                age: 17,
+                length: 190,
+                weight: 110,
+                money: 12
+            },
+            {
+                name: 'John',
+                code: 34343422,
+                age: 9,
+                length: 90,
+                weight: 30,
+                money: 776
+            },
+            {
+                name: 'Yura',
+                code: 7888765,
+                age: 14,
+                length: 150,
+                weight: 56,
+                money: 8998
+            },
+            {
+                name: 'Andrii',
+                code: 8898788,
+                age: 18,
+                length: 170,
+                weight: 77,
+                money: 677
+            },
+            {
+                name: 'Yulia',
+                code: 1215456,
+                age: 7,
+                length: 80,
+                weight: 34,
+                money: 0
+            }
+        ]
+// 1
+   console.log(db.length)
+//    2
+//    for(let i=0; i<db.length; i++){
+//     console.log(db[i].name)
+//    }
+//    3
+for(let i=0; i<db.length; i++){
+    if(db[i].age>=10){
+        console.log(db[i].name)
+    }
+   
+}
+// 4
+let s =0
+for(let n=0; n<db.length; n++){
+    if(db[n].money>=1000){
+        s++
+    }
+
+    
+}
+console.log(s)
+
+
+// 5
+let pc = [];
+let nc = [];
+for(let e=0; e<db.length; e++){
+    if(db[e].code%2==0){
+     let obj = {
+        name: db[e].name,
+        code: db[e].code
+     }    
+
+    }else{
+        let obj = {
+        name: db[e].name,
+        code: db[e].code
+     }     
+    }
+    nc.push(obj)
+
+}
+console.log(pc)
+console.log(nc)
+
+    </script>
+    
+</body>
+</html>
